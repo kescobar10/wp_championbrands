@@ -46,7 +46,7 @@ get_header('home'); ?>
           <section class="brand">
             <h2>Our <span class="block">Brands</span></h2>
 
-            <?php echo do_shortcode('[metaslider id="44"]'); ?>
+            <?php echo do_shortcode('[metaslider id="30"]'); ?>
 
 
           </section><!-- brand carousel-->
