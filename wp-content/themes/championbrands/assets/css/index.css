@@ -4,6 +4,8 @@ body {
     overflow-x:hidden;
 }
 
+
+
 /****** HOMEPAGE BODY ******/
 
 .carousel,.brand {
@@ -93,9 +95,9 @@ body {
     left: -2.5rem;
 }
 
-.card-team,
-.card-brewers,
-.card-retail {
+.card--team,
+.card--brewers,
+.card--retail {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,9 +105,9 @@ body {
 
 }
 
-.card-team h3,
-.card-brewers h3,
-.card-retail h3 {
+.card--team h3,
+.card--brewers h3,
+.card--retail h3 {
     font-size: 1.5rem;
     letter-spacing: .15rem;
     margin-bottom: 1rem;
@@ -131,15 +133,15 @@ body {
   padding: 2rem 1rem;
 }
 
-.card-team {
+.card--team {
     background-image: url("../img/bluecard1.jpg");
 }
 
-.card-retail {
+.card--retail {
     background-image: url("../img/bluecard2.jpg");
 }
 
-.card-brewers {
+.card--brewers {
     background-image: url("../img/bluecard3.jpg");
 }
 
@@ -263,7 +265,6 @@ body {
     background-color: transparent;
 }
 
-
 #main-menu-toggle {
     display: block;
     position: absolute;
@@ -371,26 +372,7 @@ body {
 
    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
  }
-/*
-.main-menu {
-  position: absolute;
-  top: 177px;
-  right: -100vw;
-  width: 0;
-  overflow-y: visible;
-  overflow-x: visible;
-  transition: right 0.3s ease;
-  transition: width 0.3s ease;
-      -webkit-transition: width 0.3s ease;
-  background-image: url('../img/texture-red.png');
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-} */
 
-/*
- * And let's fade it in from the left
- */
 #main-menu-toggle input:checked ~ ul {
   transform: scale(1.0, 1.0);
   opacity: 1;
@@ -504,3 +486,15 @@ a.navlist:hover {
     }
 }
 /* END NAV STYLES*/
+
+#menu li a[href="index.html"] {
+    text-shadow: none;
+    color: rgba(43,50,104,.8);
+}
+
+#menu li a[href="index.html"]:hover {
+    text-shadow: none;
+    color: rgba(43,50,104,.8);
+    background-color: transparent;
+    cursor: default;
+}

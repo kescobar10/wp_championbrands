@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?></title>
+		<title><?php the_title(''); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
@@ -17,56 +17,66 @@
 		<?php wp_head(); ?>
 
 	</head>
+
 	<body <?php body_class(); ?>>
 
-		<div class="container">
+		<div class="container home--page">
 
-        <header>
+			<header>
 
-            <!-- LOGO AND NAVIGATION -->
-                      <div class="header-background">
-                          <!-- SOCIAL MEDIA -->
-                          <section class="social-media-top-hp">
-                              <figure class="social">
-                                <a href="https://www.facebook.com/pages/Champion-Brands-Inc/152755478079234">
-                                  <img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.png" alt="facebook" />
+					<!-- START LOGO, SOCIAL MEDIA  NAVIGATION -->
+					<div class="header-background">
+
+						<!-- START SOCIAL MEDIA -->
+						<section class="social-media-top-hp">
+
+							<!-- facebook -->
+							<figure class="social">
+								<a href="https://www.facebook.com/pages/Champion-Brands-Inc/152755478079234">
+									<img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/facebook.png" alt="facebook" />
                                 </a>
-                              </figure>
+							</figure>
 
-                              <figure class="social">
-                                <a href="https://instagram.com/championbrands/">
-                                  <img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/instagram.png" alt="instagram" />
-                                </a>
-                              </figure>
+							<!-- instagram -->
+							<figure class="social">
+								<a href="https://instagram.com/championbrands/">
+									<img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/instagram.png" alt="instagram" />
+								</a>
+							</figure>
 
-                              <figure class="social">
+							<!-- twitter -->
+							<figure class="social">
                                 <a href="https://twitter.com/championbrands">
-                                  <img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/twitter.png" alt="twitter" />
-                                </a>
-                              </figure>
+                                	<img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/twitter.png" alt="twitter" />
+                            	</a>
+                        	</figure>
 
-                              <figure class="social">
+							<!-- linkedin -->
+                            <figure class="social">
                                 <a href="https://www.linkedin.com/company/champion-brands-inc?trk=top_nav_home">
-                                  <img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/linkedin.png" alt="linkedin" />
+                                	<img class="socialicon" src="<?php bloginfo('template_url'); ?>/assets/img/linkedin.png" alt="linkedin" />
                                 </a>
-                              </figure>
+                            </figure>
 
                             <!-- <figure class="social">
                               <a href="#">
                                 <img class="socialicon" src="img/search.png" alt="search" />
                               </a>
                             </figure> -->
-                          </section>
-                          <!-- SOCIAL MEDIA -->
-                          <h1 class="visually-hidden">Champion Brands</h1>
-                          <figure class="headerlogo">
-                            <img src="<?php bloginfo('template_url'); ?>/assets/img/champion-logo.png" alt="Champion Brands" class="logo" />
-                          </figure>
-                        <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+                        </section>
+                        <!-- END SOCIAL MEDIA -->
+
+						<h1 class="visually-hidden">Champion Brands</h1>
+						<figure class="headerlogo">
+							<img src="<?php bloginfo('template_url'); ?>/assets/img/champion-logo.png" alt="Champion Brands" class="logo" />
+                        </figure>
+                        <!-- <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
                           <span class="visually-hidden">Open main menu</span>
                           <span class="fa fa-bars fa-3x"></span>
-                        </a>
+                        </a> -->
 
+
+						<!-- start navigation bar -->
                         <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
                             <a href="#" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
                                 <span class="visually-hidden">Close main menu</span>
@@ -82,8 +92,10 @@
                                 <li><a href="contact" class="navlist">Contact</a></li>
                             </ul>
                         </nav>
-                        <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
-                      </div>
-                    </header><!-- <header> -->
+						<!-- end navigation bar -->
 
-        <main>
+					</div> <!-- end "header-background-home" -->
+
+				</header><!-- end <header> -->
+
+		<main>

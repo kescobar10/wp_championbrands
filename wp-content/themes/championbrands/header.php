@@ -2,7 +2,7 @@
 <html <?php language_attributes(); ?> class="no-js">
 	<head>
 		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?></title>
+		<title><?php the_title(''); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
         <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
@@ -48,19 +48,21 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+		<div class="container">
+
 		<header>
 
 			<!-- LOGO AND NAVIGATION -->
 			<div class="header-background">
 				<a href="index.html"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-white.png" alt="Champion Brands" class="logo-desktop"></a>
-				<a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+				<!-- <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
 					<span class="visually-hidden">Open main menu</span>
-					<span class="fa fa-bars fa-2x"></span></a>
+					<span class="fa fa-bars fa-2x"></span></a> -->
 
 					<nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
-						<a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+						<!-- <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
 							<span class="visually-hidden">Close main menu</span>
-							<span class="fa fa-close fa-2x"></span></a>
+							<span class="fa fa-close fa-2x"></span></a> -->
 							<ul>
 								<li><a href="home" class="navlist">Home</a></li>
 								<li><a href="about" class="navlist current-nav">About</a></li>
@@ -71,11 +73,11 @@
 								<li><a href="contact" class="navlist">Contact</a></li>
 							</ul>
 						</nav>
-						<a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
+						<!-- <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a> -->
 			</div>
 			<h1 class="visually-hidden">Champion Brands</h1>
 			<figure class="headerlogo">
-				<a href="index.html"><img src="<?php bloginfo('template_url'); ?>/assets/img/champion-logo.png" alt="Champion Brands" class="logo logo-mobile" /></a>
+				<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_url'); ?>/assets/img/champion-logo.png" alt="Champion Brands" class="logo logo-mobile" /></a>
 			</figure>
 		</header><!-- <header> -->
 

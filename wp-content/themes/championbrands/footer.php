@@ -1,4 +1,5 @@
 <!-- FOOTER -->
+</main>
         <footer class="footer">
           <h2 class="visually-hidden">Footer</h2>
 
@@ -56,7 +57,7 @@
             <section class="info-text">
                 <p><a href="https://www.championbrands.net/privacy-policy/">Privacy Policy</a><span class="hide-mobile">  |
                 </span><a href="https://www.championbrands.net/terms-conditions/">Terms &amp; Conditions</a></p>
-                <p>&copy;2018 Champion Brands, Inc.</p>
+                <p>&copy;<?= date('Y'); ?> Champion Brands, Inc.</p>
             </section>
 
             <!-- SOCIAL MEDIA -->
@@ -93,10 +94,10 @@
         </footer>
 
       </div>
+      <!-- end "container home-page" -->
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
-
 
 		<?php wp_footer(); ?>
 
