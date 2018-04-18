@@ -15,17 +15,17 @@ get_header('home'); ?>
     <!-- BLUE CARDS -->
     <section class= "blue-cards">
         <h2 class="visually-hidden">Spotlights</h2>
-            <section class="card--team">
+            <section class="card--team" style="background-image: url(<?php the_field('image_card_1'); ?>);">
                 <h3><?php the_field('title_card_1'); ?></h3>
                 <p><?php the_field('text_card_1'); ?> <a><?php the_field('link_card_1'); ?></a></p>
             </section>
 
-            <section class="card--brewers">
+            <section class="card--brewers" style="background-image: url(<?php the_field('image_card_2'); ?>);">
                 <h3><?php the_field('title_card_2'); ?></h3>
                 <p><?php the_field('text_card_2'); ?> <a><?php the_field('link_card_2'); ?></a></p>
             </section>
 
-            <section class="card--retail">
+            <section class="card--retail" style="background-image: url(<?php the_field('image_card_3'); ?>);">
                 <h3><?php the_field('title_card_3'); ?></h3>
                 <p><?php the_field('text_card_3'); ?> <a><?php the_field('link_card_2'); ?></a></p>
             </section>

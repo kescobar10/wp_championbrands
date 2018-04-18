@@ -3742,12 +3742,12 @@ a.current-nav {
   .home--page .blue-cards section {
     background-size: cover;
     padding: 2rem 1rem; }
-  .home--page .card--team {
-    background-image: url("../img/bluecard1.jpg"); }
-  .home--page .card--retail {
+  /* .home--page .card--team {
+    background-image: url("../img/bluecard1.jpg"); } */
+  /* .home--page .card--retail {
     background-image: url("../img/bluecard2.jpg"); }
   .home--page .card--brewers {
-    background-image: url("../img/bluecard3.jpg"); }
+    background-image: url("../img/bluecard3.jpg"); } */
   .home--page .our-brands {
     padding-top: 4%;
     padding-bottom: 2%;
