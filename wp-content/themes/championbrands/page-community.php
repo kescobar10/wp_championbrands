@@ -20,11 +20,11 @@ get_header(); ?>
                   <h3 class="visually-hidden">Partner Logos</h3>
 
                   <div class="partnerlogos">
-                    <img src="img/partner-logos/rclogo.jpg" alt="Red Cross Logo"/>
-                    <img src="img/partner-logos/wwplogo.jpg" alt="Wounded Warrior Project Logo"/>
-                    <img src="img/partner-logos/ffplogo.jpg" alt="Food For The Poor Logo"/>
-                    <img src="img/partner-logos/fclogo.jpg" alt="First Coast Logo"/>
-                    <img src="img/partner-logos/dclogo.jpg" alt="The Dream Come True Foundation Logo" id="dctf"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/rclogo.jpg" alt="Red Cross Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/wwplogo.jpg" alt="Wounded Warrior Project Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/ffplogo.jpg" alt="Food For The Poor Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/fclogo.jpg" alt="First Coast Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/dclogo.jpg" alt="The Dream Come True Foundation Logo" id="dctf"/>
                   </div>
 
                 </article>
@@ -42,7 +42,7 @@ get_header(); ?>
                   <article class="eventcard">
                     <div>
                       <figure class="eventimg" >
-                        <img src="img/brewfest.jpg" alt="Jax Brewfest" />
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/brewfest.jpg" alt="Jax Brewfest" />
                         <figcaption class="cr">Photo by <a href="https://unsplash.com/photos/KWooSfRaYGw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brandon Morgan</a> on <a href="https://unsplash.com/search/photos/beer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
                       </figure>
                       <h3 class="eventtitle">JAX BREWFEST</h3>
@@ -59,7 +59,7 @@ get_header(); ?>
                   <article class="eventcard">
                     <div>
                       <figure class="eventimg" >
-                        <img src="img/trivianight.jpg"  alt="Trivia Night"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/trivianight.jpg"  alt="Trivia Night"/>
                         <figcaption class="cr">Photo by <a href="https://unsplash.com/@priscilladupreez">Priscilla Du Preez</a> on <a href="https://unsplash.com/search/photos/beer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
                       </figure>
                       <h3 class="eventtitle">TRIVIA NIGHT</h3>
@@ -76,7 +76,7 @@ get_header(); ?>
                   <article class="eventcard">
                     <div>
                       <figure class="eventimg" >
-                        <img src="img/clientappreciation.jpg" alt="Client Appreciation"/>
+                        <img src="<?php bloginfo('template_url'); ?>/assets/img/clientappreciation.jpg" alt="Client Appreciation"/>
                         <figcaption class="cr">Photo by <a href="https://unsplash.com/@outdoor_junkiez">Drew Farwell</a> on <a href="https://unsplash.com/search/photos/beer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></figcaption>
                       </figure>
                       <h3 class="eventtitle">CLIENT APPRECIATION</h3>
@@ -89,7 +89,7 @@ get_header(); ?>
                   </article>
                 </div>
 
-              </section>    
+              </section>
 
 </div><!-- end community-page -->
 <?php get_footer(); ?>
