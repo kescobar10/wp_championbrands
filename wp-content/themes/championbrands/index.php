@@ -3,13 +3,14 @@
 <div class="blog--page">
 
     <h2>News <span class="block">and Updates</span></h2>
+    <div class="blog-grid">
 
 <!-- main post-->
           <div class="left-side">
               <div class="main-post">
                   <a href="post.html">
                       <div class="main-post-thumb-container">
-                          <img class="main-post-image" src="img/main-post.jpg" alt="Main Post" />
+                          <img class="main-post-image" src="<?php bloginfo('template_url'); ?>/assets/img/main-post.jpg" alt="Main Post" />
                           <h4 class="main-post-category cat-over-img">Champion News</h4>
                           <h3 class="main-post-title title-over-image">A day in the life of a Champion beverage</h3>
                       </div>
@@ -24,7 +25,7 @@
                   <div class="older-post">
                       <a href="post.html">
                           <div class="older-thumb-container">
-                              <img class="older-post-image" src="img/post-thumb1.jpg" alt="Thumbnail" />
+                              <img class="older-post-image" src="<?php bloginfo('template_url'); ?>/assets/img/post-thumb1.jpg" alt="Thumbnail" />
                               <h4 class="older-post-category">Recipes and Mixes</h4>
                           </div>
                           <h5 class="date">Feb. 28, 2018</h5>
@@ -37,7 +38,7 @@
                   <div class="older-post">
                       <a href="post.html">
                           <div class="older-thumb-container">
-                              <img class="older-post-image" src="img/post-thumb2.jpg" alt="Thumbnail" />
+                              <img class="older-post-image" src="<?php bloginfo('template_url'); ?>/assets/img/post-thumb2.jpg" alt="Thumbnail" />
                               <h4 class="older-post-category">Sustainability</h4>
                           </div>
                           <h5 class="date">Feb. 28, 2018</h5>
@@ -115,6 +116,8 @@
 
 
           </sidebar>
+
+      </div>
 
       </div>
 

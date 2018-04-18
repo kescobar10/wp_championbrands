@@ -1737,7 +1737,7 @@ a.current-nav {
   @media all and (min-width: 900px) {
     .blog--page a.navlist {
       font-size: 1.2rem; } }
-  .blog--page main {
+  .blog--page .blog-grid {
     max-width: 960px;
     margin: auto; }
   .blog--page h2,
@@ -1965,7 +1965,7 @@ a.current-nav {
   .blog--page sidebar {
     display: inline;
     margin-bottom: 20px; }
-  .blog--page main {
+  .blog--page .blog-grid {
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-rows: auto;
