@@ -11,9 +11,11 @@ if (!class_exists('CoolTimelineShortcode')) {
            
             // registering cool timeline shortcode
 			add_action('init', array($this, 'cooltimeline_register_shortcode'));
-			//adding required assetns
-            add_action('wp_enqueue_scripts', array($this, 'ctl_load_scripts_styles'));
-			
+			//adding required assets
+			 add_action('wp_enqueue_scripts', array($this, 'ctl_load_scripts_styles'));
+
+		 add_action( 'plugins_loaded', array($this,'load_ctl_for_elementor'));
+		
 			// Call actions and filters in after_setup_theme hook
 			add_action( 'after_setup_theme',array($this, 'ctl_crm'),999 );
 			// custom excerpt length filter for story content
@@ -36,6 +38,13 @@ if (!class_exists('CoolTimelineShortcode')) {
 			add_filter('excerpt_more', 'ctl_f_custom_excerpt_length', 999);
 		}
 
+		function load_ctl_for_elementor(){
+
+		if (did_action( 'elementor/loaded' ) ) {
+			add_shortcode('cool-timeline', array($this,'cooltimeline_view'));
+			}
+			
+		}
 		// story content length filter callback
 		function ctl_f_custom_excerpt_length( $length ) {
 			global $post;
@@ -52,7 +61,7 @@ if (!class_exists('CoolTimelineShortcode')) {
 		*/
 
         function cooltimeline_register_shortcode() {
-            add_shortcode('cool-timeline', array($this,'cooltimeline_view'));
+        	 add_shortcode('cool-timeline', array($this,'cooltimeline_view'));
 		 }
 
 		 // shortcode callback
@@ -120,7 +129,8 @@ if (!class_exists('CoolTimelineShortcode')) {
 			$ctl_posts_orders = $ctl_options_arr['posts_orders']?$ctl_options_arr['posts_orders']:"DESC";
 			$disable_months =isset($ctl_options_arr['disable_months'])?$ctl_options_arr['disable_months']:"no";
 			$title_alignment = $ctl_options_arr['title_alignment']?$ctl_options_arr['title_alignment']:"center";
-		
+		 $display_readmore= isset($ctl_options_arr['display_readmore'])?$ctl_options_arr['display_readmore']:"no";
+
             $ctl_post_per_page=$ctl_post_per_page ? $ctl_post_per_page : 10;
             $ctl_title_text = $ctl_title_text ? $ctl_title_text : 'Timeline';
             $ctl_title_tag = $ctl_title_tag ? $ctl_title_tag : 'H2';
@@ -132,6 +142,7 @@ if (!class_exists('CoolTimelineShortcode')) {
 			$wrapper_cls = 'white-timeline-wrapper';$output='';$ctl_html='';$ctl_avtar_html='';
 			
 			$display_year = '';	$wrp_cls='';$ctl_format_html='';$ctl_html_no_cont='';$ctl_animation='';$st_cls=''; $post_content="";
+			 $horizontal_html="";
 			$format =__('d/M/Y','cool-timeline');
 		    $year_position = 2;
 			$i = 0;
@@ -219,12 +230,40 @@ if (!class_exists('CoolTimelineShortcode')) {
                     $post_year = $post_date[$year_position];
                     if ($post_year != $display_year) {
                      $display_year = $post_year;
+                     
+                     $year_cls=$this->ctl_story_cls($post_year);
+                   
 						$ctle_year_lbl = sprintf('<span class="ctl-timeline-date">%s</span>', $post_year);
-						$ctl_html .= '<div  class="timeline-year scrollable-section "
+
+						$ctl_html .= '<div  class="timeline-year scrollable-section"
 						data-section-title="' . $post_year . '" id="clt-' . $post_year . '">
 						<div class="icon-placeholder">' . $ctle_year_lbl . '</div>
 						<div class="timeline-bar"></div>
 						</div>';
+						if( $display_readmore=="yes"){
+							 $horizontal_html.='<a ref="prettyPhoto" href="#ctl-story-'.$p_id.'">';
+							}
+						 $horizontal_html.='<li class="year-'.$post_year.' '.$even_odd.' '.$year_cls.'"><div class="ctl-story-year"><span class="rm_year">'.$post_year.'</span></div>';
+						 $horizontal_html.='<div class="ctl-story-title"><p class="story_title">';
+						 $horizontal_html.=get_the_title();
+						 $horizontal_html.='</p></div></li>';
+
+						  if( $display_readmore=="yes"){
+							 $horizontal_html.='</a>';
+						 	}
+
+						 $horizontal_html.='<div id="ctl-story-'.$p_id.'" class="ctl_hide"><div class="ctl-popup-content">
+						 <h2>'.get_the_title().'</h2>';
+						$story_posted_date= get_the_date(__('F j, Y','cool-timeline'));
+						$horizontal_html.='<div class="story-posted-date">'.$story_posted_date.'</div>';
+
+					 if ( has_post_thumbnail($p_id) ) {
+					      $horizontal_html .= '<div class="full-width">';
+					  	  $horizontal_html.=get_the_post_thumbnail( $p_id, 'large', array( 'class' => 'story-img') );
+					      $horizontal_html.='</div>';
+		       		 }
+						$horizontal_html.=get_the_content();
+						$horizontal_html.='</div></div>';
 						}
 					}
 			
@@ -302,6 +341,9 @@ if (!class_exists('CoolTimelineShortcode')) {
 		$timeline_id="ctl-free-one";	
 		$output .='<! ========= Cool Timeline Free '. COOL_TIMELINE_VERSION_CURRENT .' =========>';
 	   $main_wrp_cls=array();
+
+	   	if($layout!="horizontal"){  
+
         $main_wrp_cls[]="cool_timeline";
         $main_wrp_cls[]="cool-timeline-wrapper";
         $main_wrp_cls[]=$layout_wrp;
@@ -334,6 +376,15 @@ if (!class_exists('CoolTimelineShortcode')) {
 		//}
 		$output .=' </div><!-- end
  		================================================== -->';
+
+ 		}else{
+ 		   $output .= '<div class="cool_timeline_horizontal"><ul class="ctl_road_map_wrp">';
+ 			$output .=$horizontal_html;
+ 			$output .='</ul></div>';
+ 		}
+
+
+
             return $output ;
 		}
 
@@ -439,8 +490,7 @@ if (!class_exists('CoolTimelineShortcode')) {
 			/*
 			 * End
 			 * 
-			 */
-				
+			 */	
 		
 			wp_register_style('ctl_styles', COOL_TIMELINE_PLUGIN_URL . 'css/ctl_styles.css',null, null,'all' );
 			
@@ -459,7 +509,18 @@ if (!class_exists('CoolTimelineShortcode')) {
          	
          	}
 
-	
+		function ctl_story_cls($year){
+			$now = new DateTime();
+			$yNow = $now->format('Y');
+
+			if($year<$yNow){
+				return "past-year";
+			}else if($year>$yNow){
+				return "future-year";
+			}else{
+			return "current-year";	
+			}
+		}
         function ctl_load_assets(){
 	 	 global $post;   
 		  if(isset($post->post_content) && has_shortcode( $post->post_content, 'cool-timeline')){ 	

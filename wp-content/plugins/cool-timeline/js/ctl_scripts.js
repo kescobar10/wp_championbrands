@@ -17,7 +17,10 @@ jQuery('document').ready(function($){
 	 social_tools: false,
 	 show_title:false,
 	});
-
+	$(".cool_timeline_horizontal").find("a[ref^='prettyPhoto']").prettyPhoto({
+	 social_tools: false,
+	 show_title:false,
+	}); 
 
 
 });

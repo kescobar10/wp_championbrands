@@ -88,7 +88,27 @@
 							}
 						});
 					}
-                }],
+                },
+                {
+                    text: 'Add Cool Horizontal Timeline',
+					onclick: function() {
+						editor.windowManager.open( {
+							title: 'Add Horizontal Timeline/Roadmap',
+							body: [
+								{
+									type: 'textbox',
+									name: 'number_of_posts',
+									label: 'Show number of Stories',
+									value:10
+								}],
+							onsubmit: function( e ) {
+								editor.insertContent( '[cool-timeline layout="horizontal"  show-posts="' + e.data.number_of_posts + '"]');
+							}
+						});
+					}
+                }
+
+                ],
 			});
 			
 			

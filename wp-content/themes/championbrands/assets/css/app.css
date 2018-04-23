@@ -1,4 +1,4 @@
-@charset "UTF-8";
+src="<?php bloginfo('template_url'); ?>/assets/@charset "UTF-8";
 /****** IMPORTANT
 
 This page defines sections that can be found on all pages. ie header & footer
@@ -3757,7 +3757,7 @@ a.current-nav {
     max-width: 200px;
     display: inline-block; }
   @media all and (min-width: 600px) {
-    .home--page main {
+    .home--page-wrapper {
       display: grid;
       grid-template-rows: 1fr 1fr 350px;
       grid-gap: 2.5rem; }
@@ -3804,7 +3804,11 @@ a.current-nav {
     .home--page .our-brands div img {
       box-sizing: border-box;
       max-width: 200px; } }
-  .home--page .header-background {
+  .home--page-header-background {
+      background-image: url("../img/texture-red.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     width: 100%; }
   .home--page .social-media-top-hp {
     justify-content: space-around;
@@ -3819,7 +3823,7 @@ a.current-nav {
     max-width: 360px; }
   .home--page .fa-bars {
     color: #db493d; }
-  .home--page .main-menu ul {
+  .home--page-menu ul {
     background-image: none;
     background-color: transparent; }
   .home--page #main-menu-toggle {
@@ -3896,7 +3900,7 @@ a.current-nav {
     color: #df4c3f;
     background-color: rgba(255, 255, 255, 0.9); }
   @media all and (min-width: 420px) {
-    .home--page .header-background {
+    .home--page-header-background {
       justify-content: flex-end; } }
   @media all and (min-width: 500px) {
     .home--page .social-media-top-hp {
@@ -3941,16 +3945,16 @@ a.current-nav {
       padding: 1rem 1rem 1.1rem;
       width: 100%;
       margin: 0; }
-    .home--page .header-background {
+    .home--page-header-background {
       display: block; }
-    .home--page .header-background {
+    .home--page-header-background {
       padding-bottom: 0; }
     .home--page .menu-toggle,
     .home--page #main-menu-close {
       display: none; }
-    .home--page .main-menu {
+    .home--page-menu {
       position: static; }
-    .home--page .main-menu ul {
+    .home--page-menu ul {
       box-shadow: none;
       align-self: end;
       padding-top: 0;

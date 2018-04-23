@@ -5,7 +5,7 @@
 		<title><?php the_title(''); ?></title>
 
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
+        <link href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" rel="shortcut icon">
 
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,6 @@
 			<header>
 
 					<!-- START LOGO, SOCIAL MEDIA  NAVIGATION -->
-					<div class="header-background">
 
 						<!-- START SOCIAL MEDIA -->
 						<section class="social-media-top-hp">
@@ -70,15 +69,17 @@
 						<figure class="headerlogo">
 							<img src="<?php bloginfo('template_url'); ?>/assets/img/champion-logo.png" alt="Champion Brands" class="logo" />
                         </figure>
-                        <!-- <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+                        <!-- <a href="#home-page-menu" class="menu-toggle" role="button" id="home-page-menu-toggle" aria-expanded="false" aria-controls="home-page-menu" aria-label="Open main menu">
                           <span class="visually-hidden">Open main menu</span>
                           <span class="fa fa-bars fa-3x"></span>
                         </a> -->
 
 
+
+						<div class="home--page-header-background">
 						<!-- start navigation bar -->
-                        <nav id="main-menu" class="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
-                            <a href="#" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                        <nav id="home--page-menu" class="home--page-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+                            <a href="#" class="menu-close" role="button" id="home--page-menu-close" aria-expanded="false" aria-controls="home--page-menu" aria-label="Close main menu">
                                 <span class="visually-hidden">Close main menu</span>
                                 <span class="fa fa-close fa-2x"></span>
                             </a>

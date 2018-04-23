@@ -2,10 +2,10 @@
 /*
   Plugin Name:Cool Timeline 
   Plugin URI:http://www.cooltimeline.com
-  Description:Cool Timeline is a responsive wordpress plugin that allows you to create beautiful verticle storyline. You simply create posts, set images and date then Cool Timeline will automatically populate these posts in chronological order, based on the year and date
-  Version:1.3.2
-  Author:Cool Timeline Team
-  Author URI:http://www.cooltimeline.com
+  Description:Cool Timeline is a responsive WordPress timeline plugin that allows you to create beautiful vertical storyline. You simply create posts, set images and date then Cool Timeline will automatically populate these posts in chronological order, based on the year and date
+  Version:1.4
+  Author:Cool Plugins
+  Author URI:https://coolplugins.net/our-cool-plugins-list/
   License:GPLv2 or later
   License URI: https://www.gnu.org/licenses/gpl-2.0.html
   Domain Path: /languages
@@ -13,7 +13,7 @@
  */
 
 /*
-  Copyright 2015  Narinder singh (email :narinder99143@gmail.com)
+  Copyright 2015-18  Narinder singh (email :narinder99143@gmail.com)
 
   This program is free software; you can redistribute it and/or modify
   it under the terms of the GNU General Public License, version 2, as
@@ -28,7 +28,7 @@
  */
 /** Configuration * */
 if (!defined('COOL_TIMELINE_VERSION_CURRENT')){
-    define('COOL_TIMELINE_VERSION_CURRENT', '1.3.2');
+    define('COOL_TIMELINE_VERSION_CURRENT', '1.4');
 }
 // define constants for further use
 define('COOL_TIMELINE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
@@ -36,7 +36,7 @@ define('COOL_TIMELINE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
  	define( 'FA_DIR', COOL_TIMELINE_PLUGIN_DIR.'/fa-icons/' );
 	define( 'FA_URL', COOL_TIMELINE_PLUGIN_URL.'/fa-icons/'  );
 
-if (!class_exists('CoolTimeline')) {
+//if (!class_exists('CoolTimeline')) {
 
     class CoolTimeline {
 
@@ -86,6 +86,18 @@ if (!class_exists('CoolTimeline')) {
             $cool_timeline_posttype = new CoolTimelinePosttype();
 
             /*
+             *  Frontend files
+             */
+             // contains helper funciton for timeline
+            include_once COOL_TIMELINE_PLUGIN_DIR . 'includes/ctl-helper-functions.php';
+
+            //Cool Timeline Main shortcode
+            require COOL_TIMELINE_PLUGIN_DIR . 'includes/cool-timeline-shortcode.php';
+            
+            new CoolTimelineShortcode();
+            add_action('wp_enqueue_scripts','ctl_custom_style');
+
+            /*
               Loaded Backend files only 
             */
             if(is_admin()){
@@ -102,19 +114,7 @@ if (!class_exists('CoolTimeline')) {
             // icon picker for post type
             require COOL_TIMELINE_PLUGIN_DIR.'fa-icons/fa-icons-class.php';
             new Ctl_Fa_Icons();
-            }else{ 
-           
-             /*
-             *  Frontend files
-             */
-             // contains helper funciton for timeline
-            include_once COOL_TIMELINE_PLUGIN_DIR . 'includes/ctl-helper-functions.php';
-
-            //Cool Timeline Main shortcode
-            require COOL_TIMELINE_PLUGIN_DIR . 'includes/cool-timeline-shortcode.php';
-            new CoolTimelineShortcode();
-            add_action('wp_enqueue_scripts','ctl_custom_style');
-             } 
+            }
       }
 
        function clt_load_plugin_textdomain() {
@@ -267,7 +267,7 @@ if (!class_exists('CoolTimeline')) {
 
           $options_panel->OpenTab('options_4');
 
-         $options_panel->addParagraph(__('<div class="advance_options"><a target="_blank" href="https://codecanyon.net/item/cool-timeline-pro-wordpress-responsive-timeline-plugin/17046256?ref=CoolHappy"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1504097451/timeline-pro-buy_l7ffks.png"></a></div>', "cool-timeline"));
+         $options_panel->addParagraph(__('<div class="advance_options"><a target="_blank" href="https://codecanyon.net/item/cool-timeline-pro-wordpress-timeline-plugin/17046256?ref=CoolPlugins"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1504097451/timeline-pro-buy_l7ffks.png"></a></div>', "cool-timeline"));
          $options_panel->CloseTab();
 		   }
 
@@ -347,6 +347,7 @@ if (!class_exists('CoolTimeline')) {
               update_option("cool-timelne-type","FREE");
               update_option("cool-timelne-installDate",date('Y-m-d h:i:s') );
               update_option("cool-timelne-ratingDiv","no");
+                flush_rewrite_rules();
         }
 
 		// END public static function activate
@@ -411,7 +412,7 @@ if (!class_exists('CoolTimeline')) {
             $difference = $install_date->diff($current_date);
           $diff_days= $difference->days;
         if (isset($diff_days) && $diff_days>=15 && $ratingDiv == "no" ) {
-            echo $dynamic_msz;
+          //  echo $dynamic_msz;
           }
       }      
 
@@ -427,7 +428,7 @@ if (!class_exists('CoolTimeline')) {
 
         } //end class
 
-    }
+    //}
 
    // get current page post type
     function get_cpt() {

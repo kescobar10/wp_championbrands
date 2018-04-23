@@ -87,7 +87,7 @@
         <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/cool-timeline">'.__('WordPress.org','cool-timeline').'</a><br>
         <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/cool-timeline"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1504097450/stars5_gtc1rg.png"></a></div>';
 
-        $pro_add .='</div><hr><div><strong class="ctl_add_head">'.__('Upgrade to Pro version','cool-timeline').'</strong><a target="_blank" href="http://www.cooltimeline.com"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1503490189/website-images/cool-timeline-demos.png"></a> <a target="_blank" href="http://www.cooltimeline.com/downloads/buy-now-cool-timeline-pro"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1468242487/6-buy-cool-timeline_vabou4.png"></a></div>';
+        $pro_add .='</div><hr><div><strong class="ctl_add_head">'.__('Upgrade to Pro version','cool-timeline').'</strong><a target="_blank" href="https://www.cooltimeline.com/#cool-demos"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1503490189/website-images/cool-timeline-demos.png"></a> <a target="_blank" href="https://codecanyon.net/item/cool-timeline-pro-wordpress-timeline-plugin/17046256?ref=CoolPlugins"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1468242487/6-buy-cool-timeline_vabou4.png"></a></div>';
         echo $pro_add ;
     }
 

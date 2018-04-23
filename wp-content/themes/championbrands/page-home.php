@@ -5,6 +5,7 @@ Template Name: Home
 get_header('home'); ?>
 
     <!-- CAROUSEL -->
+    <div class="home--page-wrapper">
     <div class="carousel-wrapper">
         <?php
         echo do_shortcode('[smartslider3 slider=2]'); ?>
@@ -38,5 +39,7 @@ get_header('home'); ?>
         <?php echo do_shortcode('[metaslider id="30"]'); ?>
     </section><!-- brand carousel-->
 <!--</div> end .grid -->
+
+</div> <!-- end home-page -->
 
 <?php get_footer(); ?>

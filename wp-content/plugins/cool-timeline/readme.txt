@@ -1,10 +1,10 @@
 ﻿=== Cool Timeline ===
-Contributors: narinder-singh,satindersingh
-Tags:timeline, history, events, shortcodes,free,stories
+Contributors: narinder-singh,satindersingh,coolplugins
+Tags:cool timeline, dates, events, history, milestone, process, stories, story, time, timeline, vertical, program, appointments, about
 Donate link: http://www.cooltimeline.com
 Requires at least: 3.5
-Tested up to: 4.9
-Stable tag:1.3.2
+Tested up to: 4.9.5
+Stable tag:1.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -175,12 +175,16 @@ We have tried our best to create an awesome <strong>timeline plugin</strong> but
 6. Cool timeline PRO Horizontal view.
 7. Create any type of timeline using Cool timeline PRO .
 == Changelog ==
-
+= Version 1.4 |April 17 2018 =
+<ul>
+<li>Added:- Integrated Horizontal Timeline layout,Using this layout you can easily create Roadmap and small Horizontal timeline.We have represented story full content in popup</li>
+<li>Added:-Introducted Elementor Page Builder support</li>
+<li>Improvements:Minor Code Improvements</li>
+</ul>
 = Version 1.3.2 |September 13 2017 =
 <ul>
 <li>Fixed:-Fixed animation effect compatibility issue with new version of google chrome(Version 61.0.3163.79)</li>
 <li>Improvements:-added timeline styles in header and scripts in footer</li>
-<li>Improvements:-Changed pagination position in center</li>
 </ul>
 = Version 1.3.1 |September 5 2017 =
 <ul>

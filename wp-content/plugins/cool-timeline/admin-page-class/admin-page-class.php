@@ -809,8 +809,8 @@ if ( ! class_exists( 'BF_Admin_Page_Class') ) :
 </ul>
     <hr>
     <div><h2 class="ctl_add_head">Upgrade to Pro version</h2>
-    <a target="_blank" href="http://www.cooltimeline.com">
-    <img src="https://res.cloudinary.com/cooltimeline/image/upload/v1503490189/website-images/cool-timeline-demos.png"></a> <a target="_blank" href="http://www.cooltimeline.com/downloads/buy-now-cool-timeline-pro"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1468242487/6-buy-cool-timeline_vabou4.png"></a></div>
+    <a target="_blank" href="https://www.cooltimeline.com/#cool-demos">
+    <img src="https://res.cloudinary.com/cooltimeline/image/upload/v1503490189/website-images/cool-timeline-demos.png"></a> <a target="_blank" href="https://codecanyon.net/item/cool-timeline-pro-wordpress-timeline-plugin/17046256?ref=CoolPlugins"><img src="https://res.cloudinary.com/cooltimeline/image/upload/v1468242487/6-buy-cool-timeline_vabou4.png"></a></div>
     </div>';
     do_action('admin_page_class_after_page');
     }
