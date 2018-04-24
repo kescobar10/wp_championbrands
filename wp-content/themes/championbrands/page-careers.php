@@ -5,151 +5,227 @@ Template Name: Careers
 get_header(); ?>
 
 <div class="careers--page">
-    <div class="main">
 
     <div class="hero-image clearfix"></div>
 
-    <section class="title">
-                 <h1>Careers</h1>
-             </section>
+    <div class="main">
 
-             <!-- culture -->
-             <section class="culture">
-               <h2>The Champion Culture</h2>
+        <section class="title">
+            <h1>Careers</h1>
+        </section>
 
-               <p>At Champion Brands, our team of employees is undoubtedly our greatest asset – and we pride ourselves on having a diverse team of hard-working, passionate individuals. Training and team-building are paramount at Champion Brands. Our leadership team is continually working alongside our employees, giving each person the unique opportunity to learn, develop and eventually climb the ranks. Additionally, we recognize that work-life balance is a critical component of both personal and professional success.</p>
+        <!-- culture -->
+        <div class="culture-benefits">
+            <section class="culture">
+                <h2>The Champion Culture</h2>
 
-             </section><!-- culture -->
+                <p>At Champion Brands, our team of employees is undoubtedly our greatest asset – and we pride ourselves on having a diverse team of hard-working, passionate individuals. Training and team-building are paramount at Champion Brands.</p>
+            <p>Our leadership team is continually working alongside our employees, giving each person the unique opportunity to learn, develop and eventually climb the ranks. Additionally, we recognize that work-life balance is a critical component of both personal and professional success.</p>
 
-             <!-- benefits -->
-             <section class="benefits">
-               <h2>Benefits</h2>
+            </section><!-- culture -->
 
-               <ul>
-                 <li>Vacation</li>
-                 <li>Paid time off</li>
-                 <li>Medical</li>
-                 <li>Dental</li>
-                 <li>401K</li>
-                 <li>Short-term disability</li>
-                 <li>Life insurance</li>
-                 <li>Accidental death coverage</li>
-                 <li>Training opportunities</li>
-               </ul>
+            <!-- benefits -->
+            <section class="benefits">
+                <h2>Benefits</h2>
 
-               <p>In addition to our competitive benefits package, Champion Brands employees enjoy a team-focused, supportive environment where learning, leadership and trust come first.</p>
+                <ul>
+                    <li>Vacation</li>
+                    <li>Paid time off</li>
+                    <li>Medical</li>
+                    <li>Dental</li>
+                    <li>401K</li>
+                    <li>Short-term disability</li>
+                    <li>Life insurance</li>
+                    <li>Accidental death coverage</li>
+                    <li>Training opportunities</li>
+                </ul>
 
-             </section> <!-- benefits -->
+                <p>In addition to our competitive benefits package, Champion Brands employees enjoy a team-focused, supportive environment where learning, leadership and trust come first.</p>
 
-             <!-- videos -->
-             <section class="videos">
+            </section> <!-- benefits -->
+        </div> <!-- end culture/benefits -->
 
-               <h2>Hear From Current Employees</h2>
-               <div class="videos vid--mobile">
-                 <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="300" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-               </div>
+        <!-- videos -->
+        <section class="videos">
 
-               <div class="videos vid--mid">
-                 <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="550" height="310" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-               </div>
+            <h2>Hear From Current Employees</h2>
+            <!-- <div class="videos vid--mobile">
+            <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="300" height="169" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
 
-               <div class="videos vid--desktop">
-                 <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="750" height="423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-               </div>
-             </section>
+            <div class="videos vid--mid">
+            <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="550" height="310" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
 
-             <!-- job posts -->
+            <div class="videos vid--desktop">
+            <iframe src="https://player.vimeo.com/video/230942628?title=0&byline=0&portrait=0" width="750" height="423" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
 
-             <section class="job--posts">
+            <iframe src="https://player.vimeo.com/video/230942628?app_id=122963"></iframe>
+        </section>
 
-               <section class="job job--1">
+        <!-- job posts -->
+        <hr />
 
-                 <article class="job--about job--1">
-                   <h2>Delivery Driver</h2>
+        <div class="jobs-accordion">
 
-                   <h3>Georgia</h3>
+            <h2>Available Positions</h2>
 
-                   <h4>April 15 2018</h4>
-                 </article>
 
-                 <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
+            <details>
+                <summary><h3>Delivery Driver</h3></summary>
+                <h4>Location: Georgia  |  Date posted: April 15, 2018</h4>
+
+                <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
+
+                <h4>Responsibilities</h4>
+                <ul>
+                    <li>Deliver Champion Brands products to stores within in the assigned area.</li>
+                    <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
+                    <li>Obtain copies of orders to be delivered.</li>
+                    <li>Operated hand-truck in a safe manner with order into cooler.</li>
+                </ul>
+
+                <h4>Qualifications</h4>
+                <ul>
+                    <li>High School Diploma or GED required</li>
+                    <li>21 years of age or older</li>
+                    <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
+                    <li>Ability to lift, and carry up to 50 pounds or more</li>
+                    <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
+                    <li>Able to work flexible work schedule</li>
+                </ul>
+                <button type="button" name="apply now">Apply Now</button>
+            </details>
+
+            <details>
+                <summary><h3>Marketing Specialist</h3></summary>
+                <h4>Location: Jacksonville  |  Date posted: April 15, 2018</h4>
+
+                <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
+
+                <h4>Responsibilities</h4>
+                <ul>
+                    <li>Deliver Champion Brands products to stores within in the assigned area.</li>
+                    <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
+                    <li>Obtain copies of orders to be delivered.</li>
+                    <li>Operated hand-truck in a safe manner with order into cooler.</li>
+                </ul>
+
+                <h4>Qualifications</h4>
+                <ul>
+                    <li>High School Diploma or GED required</li>
+                    <li>21 years of age or older</li>
+                    <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
+                    <li>Ability to lift, and carry up to 50 pounds or more</li>
+                    <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
+                    <li>Able to work flexible work schedule</li>
+                </ul>
+            </details>
+        </div>
+
+        <div class="career-disclaimer">
+            <p>Champion Brands provides equal employment opportunities to all applicants for employment without regard to race, color, religion, sex, national origin, age, disability, gender, genetics, gender identity, disabled veterans, or sexual orientation.</p>
+        </div>
+
+
+
+
+
+
+
+        <!-- <section class="job--posts">
+
+            <section class="job job--1">
+
+                <article class="job--about job--1">
+                    <h2>Delivery Driver</h2>
+
+                    <h3>Georgia</h3>
+
+                    <h4>April 15 2018</h4>
+                </article>
+
+                <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
 
                 <article class="job--req job--1">
-                   <h3>Responsibilities</h3>
+                    <h3>Responsibilities</h3>
 
-                   <ul>
-                      <li>Deliver Champion Brands products to stores within in the assigned area.</li>
-                      <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
-                      <li>Obtain copies of orders to be delivered.</li>
-                      <li>Operated hand-truck in a safe manner with order into cooler.</li>
-                 </ul>
-               </article>
+                    <ul>
+                        <li>Deliver Champion Brands products to stores within in the assigned area.</li>
+                        <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
+                        <li>Obtain copies of orders to be delivered.</li>
+                        <li>Operated hand-truck in a safe manner with order into cooler.</li>
+                    </ul>
+                </article>
 
-               <article class="job--qual job--1">
-                  <h3>Qualifications</h3>
+                <article class="job--qual job--1">
+                    <h3>Qualifications</h3>
 
-                  <ul>
-                     <li>High School Diploma or GED required</li>
-                     <li>21 years of age or older</li>
-                     <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
-                     <li>Ability to lift, and carry up to 50 pounds or more</li>
-                     <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
-                     <li>Able to work flexible work schedule</li>
-                </ul>
-              </article>
+                    <ul>
+                        <li>High School Diploma or GED required</li>
+                        <li>21 years of age or older</li>
+                        <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
+                        <li>Ability to lift, and carry up to 50 pounds or more</li>
+                        <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
+                        <li>Able to work flexible work schedule</li>
+                    </ul>
+                </article>
 
-               <p>Champion Brands provides equal employment opportunities to all applicants for employment without regard to race, color, religion, sex, national origin, age, disability, gender, genetics, gender identity, disabled veterans, or sexual orientation.</p>
+                <p>Champion Brands provides equal employment opportunities to all applicants for employment without regard to race, color, religion, sex, national origin, age, disability, gender, genetics, gender identity, disabled veterans, or sexual orientation.</p>
 
-                 <button type="button" name="apply now">Apply Now</button>
+                <button type="button" name="apply now">Apply Now</button>
 
-               </section><!-- job 1 -->
+            </section><!-- job 1 -->
 
-                <!-- job 2 -->
-                <section class="job job--2">
+            <!-- job 2 -->
+            <!-- <section class="job job--2">
 
-                  <article class="job--about job--2">
+                <article class="job--about job--2">
                     <h2>Delivery Driver</h2>
 
                     <h3>Florida</h3>
 
                     <h4>April 4 2018</h4>
-                  </article>
+                </article>
 
-                  <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
+                <p>We are looking for experienced CDL Delivery Drivers to deliver products from our Distribution Center to the retail outlets, accessing orders from the load on the truck, loading the individual orders onto the hand- truck, and transferring the order into the retailer's cooler, and unloading the order.</p>
 
-                 <article class="job--req job--2">
+                <article class="job--req job--2">
                     <h3>Responsibilities</h3>
 
                     <ul>
-                       <li>Deliver Champion Brands products to stores within in the assigned area.</li>
-                       <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
-                       <li>Obtain copies of orders to be delivered.</li>
-                       <li>Operated hand-truck in a safe manner with order into cooler.</li>
-                  </ul>
+                        <li>Deliver Champion Brands products to stores within in the assigned area.</li>
+                        <li>Greet and maintain a professional relationship with customer while providing excellent customer service.</li>
+                        <li>Obtain copies of orders to be delivered.</li>
+                        <li>Operated hand-truck in a safe manner with order into cooler.</li>
+                    </ul>
                 </article>
 
                 <article class="job--qual job--2">
-                   <h3>Qualifications</h3>
+                    <h3>Qualifications</h3>
 
-                   <ul>
-                      <li>High School Diploma or GED required</li>
-                      <li>21 years of age or older</li>
-                      <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
-                      <li>Ability to lift, and carry up to 50 pounds or more</li>
-                      <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
-                      <li>Able to work flexible work schedule</li>
-                 </ul>
-               </article>
+                    <ul>
+                        <li>High School Diploma or GED required</li>
+                        <li>21 years of age or older</li>
+                        <li>Valid Commercial Driver's License (CDL) and driver’s license</li>
+                        <li>Ability to lift, and carry up to 50 pounds or more</li>
+                        <li>Ability to push and pull several 100 pounds on a hand and/or platform truck</li>
+                        <li>Able to work flexible work schedule</li>
+                    </ul>
+                </article>
 
-                <p>Champion Brands provides equal employment opportunities to all applicants for employment without regard to race, color, religion, sex, national origin, age, disability, gender, genetics, gender identity, disabled veterans, or sexual orientation.</p>
+                <div class="career-disclaimer">
+                    <p>Champion Brands provides equal employment opportunities to all applicants for employment without regard to race, color, religion, sex, national origin, age, disability, gender, genetics, gender identity, disabled veterans, or sexual orientation.</p>
+                </div>
 
-                  <button type="button" name="apply now">Apply Now</button>
+                <button type="button" name="apply now">Apply Now</button>
 
-                </section><!-- job 2 -->
+            </section><!-- job 2 -->
 
-              </section> <!-- job posts -->
+        <!-- </section> <!-- job posts -->
 
-          </div>
+    </div> <!-- end Main -->
+
 
 </div> <!-- end careers-page -->
 

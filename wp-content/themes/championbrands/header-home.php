@@ -83,15 +83,7 @@
                                 <span class="visually-hidden">Close main menu</span>
                                 <span class="fa fa-close fa-2x"></span>
                             </a>
-                            <ul>
-                                <li><a href="home" class="navlist">Home</a></li>
-                                <li><a href="about" class="navlist">About</a></li>
-                                <li><a href="community" class="navlist">Community</a></li>
-                                <li><a href="product" class="navlist">Products</a></li>
-                                <li><a href="careers" class="navlist">Careers</a></li>
-                                <li><a href="blog" class="navlist">Blog</a></li>
-                                <li><a href="contact" class="navlist">Contact</a></li>
-                            </ul>
+                            <?php html5blank_nav(); ?>
                         </nav>
 						<!-- end navigation bar -->
 
