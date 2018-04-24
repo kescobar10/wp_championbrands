@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- TYPEKIT / GOOGLE FONTS / FONTS.COM -->
+		<link href="https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
 
 		<!-- SCRIPT -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

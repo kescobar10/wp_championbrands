@@ -4,12 +4,10 @@ src="<?php bloginfo('template_url'); ?>/assets/@charset "UTF-8";
 This page defines sections that can be found on all pages. ie header & footer
 
 IMPORTANT ******/
-@import url("https://fonts.googleapis.com/css?family=Zilla+Slab:400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Cookie");
-@import url("https://fonts.googleapis.com/css?family=Asap");
+
 @font-face {
   font-family: "Barley Script";
-  src: url("../fonts/barleyscript-regular.otf") format("otf"), url("../fonts/barleyscript-regular.woff") format("woff"), url("../fonts/barleyscript-regular.woff2") format("woff2"), url("../fonts/barleyscript-regular.ttf") format("truetype"); }
+  src: url("http://shockcreative.agency/capstone/wp-content/themes/championbrands/assets/fonts/barleyscript-regular.otf") format("otf"), url("http://shockcreative.agency/capstone/wp-content/themes/championbrands/assets/fonts/barleyscript-regular.woff") format("woff"), url("http://shockcreative.agency/capstone/wp-content/themes/championbrands/assets/fonts/barleyscript-regular.woff2") format("woff2"), url("http://shockcreative.agency/capstone/wp-content/themes/championbrands/assets/fonts/barleyscript-regular.ttf") format("truetype"); }
 
 :root {
   font-size: 16px;
