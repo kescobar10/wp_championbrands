@@ -69,7 +69,7 @@ get_header(); ?>
                 </section>
 
                 <section>
-                  <h3>Email:</h3> <p>info@championbrands.net</p>
+                  <h4>Email:</h4> <p>info@championbrands.net</p>
                 </section>
 
                 <section>

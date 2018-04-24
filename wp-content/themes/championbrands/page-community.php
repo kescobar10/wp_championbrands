@@ -13,23 +13,26 @@ get_header(); ?>
 
             <main class="container">
               <section class="community">
-                <h2><span class="cursive"><?php the_field('community_title_i'); ?></span> <?php the_field('community_title_ii'); ?></h2>
-                <p><?php the_field('community_text'); ?></p>
+                <h2><span class="cursive">Community</span> Matters</h2>
+                <p>At Champion Brands, our community drives everything we do. We aim to be more than a business in the community, but to be a community business. You can come find us at our hosted events, or you can invite us to yours! We also want to give back to the community that we call home. We are happy to donate time, bodies, and beverage to local nonprofits to help them achieve their missions and goals. Please click the below button to send us a donation request and we will do our best to help! Here are a few of our partners: </p>
 
                 <article>
                   <h3 class="visually-hidden">Partner Logos</h3>
 
                   <div class="partnerlogos">
-                    <?php echo do_shortcode('[metaslider id="128"]'); ?>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/rclogo.jpg" alt="Red Cross Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/wwplogo.jpg" alt="Wounded Warrior Project Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/ffplogo.jpg" alt="Food For The Poor Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/fclogo.jpg" alt="First Coast Logo"/>
+                    <img src="<?php bloginfo('template_url'); ?>/assets/img/partner-logos/dclogo.jpg" alt="The Dream Come True Foundation Logo" id="dctf"/>
                   </div>
 
                 </article>
 
                 <div class="button">
-                    <a href="<?php the_field('request_donation'); ?>"><input type="button" class="btn" value = "Request Donation"></a>
+                    <a href="contact.html"><input type="button" class="btn" value = "Request Donation"></a>
                 </div>
               </section>
-              <hr />
 
               <section class="events"> <!-- events -->
                 <h2><span class="cursive">Our</span> Events</h2>

@@ -55,8 +55,8 @@
           <!-- COPYRIGHT -->
           <section class="info">
             <section class="info-text">
-                <p><a href="privacy-policy">Privacy Policy</a><span class="hide-mobile">  |
-                </span><a href="terms-conditions">Terms &amp; Conditions</a></p>
+                <p><a href="https://www.championbrands.net/privacy-policy/">Privacy Policy</a><span class="hide-mobile">  |
+                </span><a href="https://www.championbrands.net/terms-conditions/">Terms &amp; Conditions</a></p>
                 <p>&copy;<?= date('Y'); ?> Champion Brands, Inc.</p>
             </section>
 

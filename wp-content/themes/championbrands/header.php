@@ -48,13 +48,13 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<div class="container inner-pages">
+		<div class="container">
 
 		<header>
 
 			<!-- LOGO AND NAVIGATION -->
 			<div class="header-background">
-				<a href="home"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-white.png" alt="Champion Brands" class="logo-desktop"></a>
+				<a href="index.html"><img src="<?php bloginfo('template_url'); ?>/assets/img/logo-white.png" alt="Champion Brands" class="logo-desktop"></a>
 				<!-- <a href="#main-menu" class="menu-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
 					<span class="visually-hidden">Open main menu</span>
 					<span class="fa fa-bars fa-2x"></span></a> -->
@@ -63,7 +63,15 @@
 						<!-- <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
 							<span class="visually-hidden">Close main menu</span>
 							<span class="fa fa-close fa-2x"></span></a> -->
-							<?php html5blank_nav(); ?>
+							<ul>
+								<li><a href="home" class="navlist">Home</a></li>
+								<li><a href="about" class="navlist current-nav">About</a></li>
+								<li><a href="community" class="navlist">Community</a></li>
+								<li><a href="product" class="navlist">Products</a></li>
+								<li><a href="careers" class="navlist">Careers</a></li>
+								<li><a href="blog" class="navlist">Blog</a></li>
+								<li><a href="contact" class="navlist">Contact</a></li>
+							</ul>
 						</nav>
 						<!-- <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a> -->
 			</div>
